@@ -1,21 +1,21 @@
 import React, { useContext } from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
-import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
-
-import { shortenAddress } from '../utils/shortenAddress';
-
-import { TransactionContext } from '../context/TransactionContext';
+import { SiEthereum } from 'react-icons/si';
 import { Loader } from '.';
+import { TransactionContext } from '../context/TransactionContext';
+import { shortenAddress } from '../utils/shortenAddress';
 
 const commonStyles =
 	'min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white';
 
-const Input = ({ placeholder, name, type, value, handleChange }) => (
+const Input = ({ placeholder, name, type, maxLength, value, handleChange }) => (
 	<input
 		placeholder={placeholder}
 		type={type}
+		maxLength={maxLength}
 		step='0.0001'
+		max='100000'
 		value={value}
 		onChange={(e) => handleChange(e, name)}
 		className='my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism'
@@ -44,7 +44,7 @@ const Welcome = () => {
 						Send Crypto <br /> across the world
 					</h1>
 					<p className='text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base'>
-						Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
+						Explore the crypto world. Send and receive cryptocurrencies easily on Krypto.
 					</p>
 					{!currentAccount && (
 						<button
@@ -85,24 +85,28 @@ const Welcome = () => {
 					<div className='p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism'>
 						<Input
 							placeholder='Address To'
+							maxLength={50}
 							name='addressTo'
 							type='text'
 							handleChange={handleChange}
 						/>
 						<Input
 							placeholder='Amount (ETH)'
+							maxLength={8}
 							name='amount'
 							type='number'
 							handleChange={handleChange}
 						/>
 						<Input
 							placeholder='Keyword (Gif)'
+							maxLength={15}
 							name='keyword'
 							type='text'
 							handleChange={handleChange}
 						/>
 						<Input
-							placeholder='Enter Message'
+							placeholder='Enter Message (max. 30 characters)'
+							maxLength={30}
 							name='message'
 							type='text'
 							handleChange={handleChange}
