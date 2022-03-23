@@ -19,7 +19,7 @@
 
 👤 **Gabriel Queiroz**
 
--  Website: https://www.instagram.com/gabriel.rqueiroz/
+-  Instagram: https://www.instagram.com/gabriel.rqueiroz/
 -  Twitter: [@GabrielRQz](https://twitter.com/GabrielRQz)
 -  Github: [@GabrielRQueiroz](https://github.com/GabrielRQueiroz)
 -  LinkedIn: [Gabriel Queiroz](https://linkedin.com/in/gabriel-queiroz-b0b111218)
