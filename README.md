@@ -15,19 +15,6 @@
 
 ### ✨ [Demo](https://kryptosend.web.app/)
 
-## Author
-
-👤 **Gabriel Queiroz**
-
--  Instagram: https://www.instagram.com/gabriel.rqueiroz/
--  Twitter: [@GabrielRQz](https://twitter.com/GabrielRQz)
--  Github: [@GabrielRQueiroz](https://github.com/GabrielRQueiroz)
--  LinkedIn: [Gabriel Queiroz](https://linkedin.com/in/gabriel-queiroz-b0b111218)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ## 📝 License
 
 Copyright © 2022 [Gabriel Queiroz](https://github.com/GabrielRQueiroz).<br />
